@@ -1,2 +1,0 @@
- type tuple<int> Narrow;
-
