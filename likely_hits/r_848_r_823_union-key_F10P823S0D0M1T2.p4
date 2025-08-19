@@ -1,0 +1,13 @@
+    struct Headers {
+     }
+      control c(in Headers h)() {
+       table t {
+        key = {
+         h.u.h1.x : exact;
+       }
+        actions = {
+       }
+      }
+       apply {
+   }
+     }

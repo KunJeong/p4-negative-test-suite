@@ -1,0 +1,2 @@
+typedef list<void> t;
+

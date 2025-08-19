@@ -1,0 +1,8 @@
+  control c()() {
+    action a(in bit<1> v1, in bit<((tuple<>) ({
+ }
+ ))> v2) {
+}
+    apply {
+}
+  }

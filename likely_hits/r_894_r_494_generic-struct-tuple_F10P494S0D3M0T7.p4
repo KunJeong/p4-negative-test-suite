@@ -1,0 +1,5 @@
+struct S<T> {
+ }
+  const S<bit<32>> x = {
+ t = { 0, 0, ... }
+ };
