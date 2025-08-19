@@ -1,1 +1,0 @@
-bit<5> f1(in int<0> a) {   return ((5w1) << (5)); }
