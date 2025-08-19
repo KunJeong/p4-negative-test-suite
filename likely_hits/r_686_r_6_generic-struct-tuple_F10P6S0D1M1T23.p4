@@ -5,3 +5,9 @@ struct S<T> {
     t = {
    0, 0 }
     };
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 1 duplicate files:
+// - r_692_r_6_generic-struct-tuple_F10P6S0D1M1T23.p4
+// =========================================

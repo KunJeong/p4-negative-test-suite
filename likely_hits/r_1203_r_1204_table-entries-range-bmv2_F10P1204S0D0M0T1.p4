@@ -28,3 +28,9 @@ match_kind {
        apply {
       }
      }
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 1 duplicate files:
+// - r_1208_r_1204_table-entries-range-bmv2_F10P1204S0D0M0T1.p4
+// =========================================

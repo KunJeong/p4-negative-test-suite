@@ -28,3 +28,9 @@ match_kind {
        apply {
       }
      }
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 1 duplicate files:
+// - r_724_r_565_table-entries-lpm-bmv2_F10P565S0D3M0T6.p4
+// =========================================

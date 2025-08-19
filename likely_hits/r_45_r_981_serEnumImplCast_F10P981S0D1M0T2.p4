@@ -14,3 +14,9 @@ enum bit<2> foo_t {
          apply {
      }
        }
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 1 duplicate files:
+// - r_689_r_981_serEnumImplCast_F10P981S0D1M0T2.p4
+// =========================================

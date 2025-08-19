@@ -12,3 +12,10 @@ typedef bit<1> t;
          state start {
           }
        }
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 2 duplicate files:
+// - r_154_r_155_issue3307_F10P155S0D4M1T27.p4
+// - r_164_r_155_issue3307_F10P155S0D4M1T27.p4
+// =========================================

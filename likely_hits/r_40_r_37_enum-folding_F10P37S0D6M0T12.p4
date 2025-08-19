@@ -3,3 +3,5 @@ enum X {
   b
 };
 const bool a = (({#}) == (X.b));
+
+// MERGED DUPLICATE: 743

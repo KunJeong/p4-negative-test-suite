@@ -52,3 +52,9 @@ extern packet_in {
    }
   }
    V1Switch(p(), vrfy(), ingress(), egress(), update(), deparser()) main;
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 1 duplicate files:
+// - r_59_r_1266_issue1386_F5P1266S1D8M0T16.p4
+// =========================================

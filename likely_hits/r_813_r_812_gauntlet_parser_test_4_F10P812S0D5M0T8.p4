@@ -9,3 +9,9 @@ extern packet_in {
        }
           }
        }
+
+// =========================================
+// MERGED DUPLICATE FILES:
+// This file consolidates 1 duplicate files:
+// - r_827_r_812_gauntlet_parser_test_4_F10P812S0D5M0T8.p4
+// =========================================
