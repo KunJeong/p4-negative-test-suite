@@ -1,6 +1,3 @@
 // generated from lvalue-parens.p4
 
-control C();
- package P(C c);
- extern list<_> c();
- P(MyC()) main;
+extern list<_> c();

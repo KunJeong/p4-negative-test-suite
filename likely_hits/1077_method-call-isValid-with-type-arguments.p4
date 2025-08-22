@@ -1,7 +1,6 @@
 // generated from issue3779.p4
 
-header h {
-}
+header h {}
 bool f() {
-  return ((((h) ({ })).isValid()) || (((h) ({#})).isValid<tuple<>, string>()));
+  return ((h) {#}).isValid<tuple<>, string>();
 }

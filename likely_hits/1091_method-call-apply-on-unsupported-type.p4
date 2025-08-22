@@ -2,11 +2,9 @@
 
 control ctrl()() {
   table t {
-    actions = {
-    }
+    actions = {}
   }
   apply {
-    switch ({#}.apply().action_run) {
-}
+    switch ({#}.apply().action_run) {}
   }
 }
