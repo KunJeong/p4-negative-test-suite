@@ -1,14 +1,8 @@
 // generated from issue1205-bmv2.p4
 
-parser P();
 control C();
-package V1Switch(C c, P p);
+package V1Switch(C c);
 parser MyP()() {
-  state start {
-  }
+  state start {}
 }
-control MyC()() {
-  apply {
-  }
-}
-V1Switch(MyP(), MyC()) main;
+V1Switch(MyP()) main;
