@@ -2,9 +2,9 @@
 
 header H {
 }
-control C(out bit<32> x)() {
+control C()() {
   H[2] stack;
   apply {
-    stack = ((tuple<>) ({ ((H) ({#})), ... }));
+    stack = ((tuple<>) { ((H) {#}), ... });
   }
 }

@@ -10,9 +10,3 @@ control C(out bit<32> x)() {
     stack = ((H1[2]) ({ ((H) ({#})), ... }));
   }
 }
-
-// =========================================
-// MERGED DUPLICATE FILES:
-// This file consolidates 1 duplicate files:
-// - r_644_r_643_default-initializer_F4P643S0D2M0T5.p4
-// =========================================

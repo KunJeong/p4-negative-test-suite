@@ -10,9 +10,3 @@ control c(out bit<32> r)() {
     s = ((H<bit<32>>[3]) ({ { 0, 1 }, { 2, 3 }, ((H<bit<32>>) ({#})) }));
   }
 }
-
-// =========================================
-// MERGED DUPLICATE FILES:
-// This file consolidates 1 duplicate files:
-// - r_62_r_53_stack-init_F9P53S0D2M0T18.p4
-// =========================================

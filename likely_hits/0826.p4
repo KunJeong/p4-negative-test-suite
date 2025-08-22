@@ -1,5 +1,7 @@
 // generated from default-switch.p4
 
 control ctrl()() {
-   apply {     switch ({ }.action_run) { }   }
- }
+  apply {
+    switch ({ }.action_run) { }
+  }
+}

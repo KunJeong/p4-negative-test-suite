@@ -16,9 +16,3 @@ extern packet_in {
        }
           }
        }
-
-// =========================================
-// MERGED DUPLICATE FILES:
-// This file consolidates 1 duplicate files:
-// - r_1134_r_783_issue356-bmv2_F10P783S0D6M0T27.p4
-// =========================================
