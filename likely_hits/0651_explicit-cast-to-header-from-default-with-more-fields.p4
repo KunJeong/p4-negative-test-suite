@@ -1,11 +1,8 @@
 // generated from default-initializer.p4
 
-header H {
-   }
-    control C(out bit<32> x)() {
-     apply {
-      H h6 = ((H) ({
- ... }
- ));
-    }
-   }
+header H {}
+control C()() {
+  apply {
+    H h = (H) { ... };
+  }
+}
