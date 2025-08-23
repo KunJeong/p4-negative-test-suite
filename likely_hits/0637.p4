@@ -14,7 +14,7 @@ control I(inout metadata_t meta)() {
   apply {
     H h = { b = 1 };
     if (meta.foo == PSA_CPU_PORT) {
-      if ((h) == ((H) { lazy = 1 }))) h = { b = 2 };
+      if (h == ((H) { lazy = 1 })) h = { b = 2 };
     }
   }
 }

@@ -1,4 +1,5 @@
 // generated from issue3307.p4
 
-typedef bit<1> t;
- extern e {   e();   abstract t e(in t a); }
+extern e {
+  abstract t e(in bit<1> a);
+}
