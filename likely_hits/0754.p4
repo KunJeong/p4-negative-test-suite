@@ -11,6 +11,6 @@ struct Headers {
 control ingress(inout Headers h)() {
   apply {
     ethernet_t tmp_hdr = { 1, 1, 1 };
-    h.eth_hdr.eth_type = ((tmp_hdr.eth_type) |-| (false));
+    h.eth_hdr.eth_type = (tmp_hdr.eth_type |-| false);
   }
 }

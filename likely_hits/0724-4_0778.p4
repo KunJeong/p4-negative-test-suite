@@ -7,7 +7,5 @@ struct Headers {
   ethernet_t eth_hdr;
 }
 void f(inout Headers h) {
-  h.eth_hdr = (((0 == 0)) ? 0 : ({
-        2, 2, 2, ... }
-        ));
+  h.eth_hdr = ((0 == 0) ? 0 : { 2, 2, 2, ... });
 }

@@ -1,4 +1,4 @@
 // generated from issue2342.p4
 
-const bool tmp = ((1) != (8w2["tmp":0]));
+const bool tmp = (1 != 8w2["tmp":0]);
 

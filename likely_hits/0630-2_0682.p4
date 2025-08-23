@@ -8,6 +8,9 @@ struct S2<T> {
 struct S1<T1, T2> {}
 control c(inout bit<8> a)() {
   apply {
-    test(((S1<bit<4>, int<6>>) ({ x = 0, y = ((S2<int<6>>) ({ x = {#}, y = 0 })) })));
+    test((S1<bit<4>, int<6>>) {
+      x = 0,
+      y = (S2<int<6>>) { x = {#}, y = 0 }
+    });
   }
 }

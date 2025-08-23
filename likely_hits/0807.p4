@@ -70,7 +70,31 @@ struct user_meta_t {
   bit<16> L2_packet_len_bytes;
 }
 control MainControlImpl(inout parsed_headers_t hdrs, inout user_meta_t umeta, in pna_main_input_metadata_t istd, inout pna_main_output_metadata_t ostd)() {
-  action encap_one_tunnel_layer_ipv4(bit<48> mac_da, bit<48> mac_sa, bit<32> ipv4_sa, bit<32> ipv4_da) {     hdrs.ipv4[3] = hdrs.ipv4[2];     hdrs.ipv4[2] = hdrs.ipv4[1];     hdrs.ipv4[1] = hdrs.ipv4[0];     hdrs.ipv4[0].setInvalid();     hdrs.mac.da = mac_da;     hdrs.mac.sa = mac_sa;     hdrs.mac.type = .ParserError_t.mac_da;     hdrs.ipv4[0].setValid();     hdrs.ipv4[0].version = 4;     hdrs.ipv4[0].ihl = 5;     hdrs.ipv4[0].dscp = 5;     hdrs.ipv4[0].ecn = 0;     hdrs.ipv4[0].length = ((hdrs.ipv4[0].maxSizeInBytes()) + (umeta.L2_packet_len_bytes));     hdrs.ipv4[0].identification = 0;     hdrs.ipv4[0].rsvd = 0;     hdrs.ipv4[0].df = 0;     hdrs.ipv4[0].mf = 0;     hdrs.ipv4[0].frag_off = 0;     hdrs.ipv4[0].ttl = 64;     hdrs.ipv4[0].protocol = IP_PROTO_IPV4;     hdrs.ipv4[0].csum = 0;     hdrs.ipv4[0].src_ip = ipv4_sa;     hdrs.ipv4[0].dst_ip = ipv4_da;   }
+  action encap_one_tunnel_layer_ipv4(bit<48> mac_da, bit<48> mac_sa, bit<32> ipv4_sa, bit<32> ipv4_da) {
+    hdrs.ipv4[3] = hdrs.ipv4[2];
+    hdrs.ipv4[2] = hdrs.ipv4[1];
+    hdrs.ipv4[1] = hdrs.ipv4[0];
+    hdrs.ipv4[0].setInvalid();
+    hdrs.mac.da = mac_da;
+    hdrs.mac.sa = mac_sa;
+    hdrs.mac.type = .ParserError_t.mac_da;
+    hdrs.ipv4[0].setValid();
+    hdrs.ipv4[0].version = 4;
+    hdrs.ipv4[0].ihl = 5;
+    hdrs.ipv4[0].dscp = 5;
+    hdrs.ipv4[0].ecn = 0;
+    hdrs.ipv4[0].length = hdrs.ipv4[0].maxSizeInBytes() + umeta.L2_packet_len_bytes;
+    hdrs.ipv4[0].identification = 0;
+    hdrs.ipv4[0].rsvd = 0;
+    hdrs.ipv4[0].df = 0;
+    hdrs.ipv4[0].mf = 0;
+    hdrs.ipv4[0].frag_off = 0;
+    hdrs.ipv4[0].ttl = 64;
+    hdrs.ipv4[0].protocol = IP_PROTO_IPV4;
+    hdrs.ipv4[0].csum = 0;
+    hdrs.ipv4[0].src_ip = ipv4_sa;
+    hdrs.ipv4[0].dst_ip = ipv4_da;
+  }
   action decap_one_tunnel_layer_just_before_eth() {}
   table header_mod {
     key = {
@@ -88,6 +112,6 @@ control MainControlImpl(inout parsed_headers_t hdrs, inout user_meta_t umeta, in
     if (hdrs.mac.isValid()) {
       header_mod.apply();
     }
-    send_to_port(((PortId_t) (1)));
+    send_to_port((PortId_t) 1);
   }
 }

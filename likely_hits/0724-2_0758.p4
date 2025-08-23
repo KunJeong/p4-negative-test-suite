@@ -1,3 +1,5 @@
 // generated from default-initializer.p4
 
-header H {   bit<(({ ... }) / (true))> b; }
+header H {
+  bit<({ ... } / true)> b;
+}
