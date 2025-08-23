@@ -1,8 +1,7 @@
 // generated from lvalue-parens.p4
 
-package P(tuple<> c);
 control MyC()() {
-  apply {
-  }
+  apply {}
 }
+package P(tuple<> c);
 P(MyC()) main;
