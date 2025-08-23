@@ -1,3 +1,5 @@
 // generated from issue3616.p4
 
-enum bit<4> e { a = 0, b = true[...], c = ((bit<4>) (a)), d = a };
+enum bit<4> e {
+  b = true[...],
+};

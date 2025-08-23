@@ -1,7 +1,4 @@
 // generated from enum-folding.p4
 
-enum X {
-  a,
-  b
-};
+enum X { a };
 const bool a = (X.a == { });

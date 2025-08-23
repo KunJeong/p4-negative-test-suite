@@ -9,8 +9,6 @@ struct Headers {
 }
 parser P(in Headers h)() {
   state start {
-    if (0 == 0) {
-      h.h2[1] = h.h1.last;
-    }
+    h.h2[1] = h.h1.last;
   }
 }

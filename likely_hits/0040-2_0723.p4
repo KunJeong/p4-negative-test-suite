@@ -1,9 +1,4 @@
 // generated from enum-folding.p4
 
-enum X {   a,   b };
- const bool a = ((X.a) == ({ { }, ... }
-));
-
-// =========================================
-// MERGED DUPLICATE: 723
-// =========================================
+enum X { a };
+const bool a = (X.a == { { }, ... });

@@ -13,18 +13,6 @@ enum PNA_Direction_t {
   NET_TO_HOST,
   HOST_TO_NET
 };
-struct pna_main_input_metadata_t {
-  PNA_Direction_t direction;
-  PassNumber_t pass;
-  bool loopedback;
-  Timestamp_t timestamp;
-  ParserError_t parser_error;
-  ClassOfService_t class_of_service;
-  PortId_t input_port;
-}
-struct pna_main_output_metadata_t {
-  ClassOfService_t class_of_service;
-}
 header eth_t {
   bit<48> da;
   bit<48> sa;
@@ -69,7 +57,7 @@ struct parsed_headers_t {
 struct user_meta_t {
   bit<16> L2_packet_len_bytes;
 }
-control MainControlImpl(inout parsed_headers_t hdrs, inout user_meta_t umeta, in pna_main_input_metadata_t istd, inout pna_main_output_metadata_t ostd)() {
+control MainControlImpl(inout parsed_headers_t hdrs, inout user_meta_t umeta)() {
   action encap_one_tunnel_layer_ipv4(bit<48> mac_da, bit<48> mac_sa, bit<32> ipv4_sa, bit<32> ipv4_da) {
     hdrs.ipv4[3] = hdrs.ipv4[2];
     hdrs.ipv4[2] = hdrs.ipv4[1];
@@ -95,15 +83,12 @@ control MainControlImpl(inout parsed_headers_t hdrs, inout user_meta_t umeta, in
     hdrs.ipv4[0].src_ip = ipv4_sa;
     hdrs.ipv4[0].dst_ip = ipv4_da;
   }
-  action decap_one_tunnel_layer_just_before_eth() {}
   table header_mod {
     key = {
       hdrs.mac.da : exact;
     }
-
     actions = {
       encap_one_tunnel_layer_ipv4;
-      decap_one_tunnel_layer_just_before_eth;
       NoAction;
     }
     const default_action = NoAction;
