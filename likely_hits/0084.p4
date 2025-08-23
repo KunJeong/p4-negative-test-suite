@@ -1,9 +1,8 @@
 // generated from shift-int-const.p4
 
-header hdr_t {}
-control c(out string P)() {
+control C(inout string s);
+package P(C c);
+control c(out string s)() {
   apply {}
 }
-control C(inout hdr_t hdr);
-package P(C c);
 P(c()) main;

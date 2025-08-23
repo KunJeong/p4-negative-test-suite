@@ -6,16 +6,12 @@ struct s {
 }
 extern bit<1> ext();
 control c()() {
-  action a1(in s v) {
-  }
+  action a1(in s v) {}
   table t {
     actions = {
-      a1(((s) ({
-              ext(), ext() }
-              )));
+      a1((s) { ext(), ext() });
     }
-    default_action = a1(((match_kind) (...)));
+    default_action = a1((match_kind) (...));
   }
-  apply {
-  }
+  apply {}
 }
