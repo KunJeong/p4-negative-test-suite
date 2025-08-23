@@ -12,7 +12,6 @@ struct Header_t {
   hdr h;
 }
 control ingress(inout Header_t h)() {
-  action a() {}
   action a_with_control_params(bit<9> x) {}
   table t_range {
     key = {

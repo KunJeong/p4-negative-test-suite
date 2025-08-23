@@ -1,8 +1,7 @@
 // generated from issue2795.p4
 
-extern packet_out {}
-control c(packet_out p)() {
+control c()() {
   apply {
-    p.emit(c.c(_));
+    c.c(_)
   }
 }
