@@ -1,7 +1,6 @@
 // generated from type-spec-nested.p4
 
 void test<T>(in T val) {}
-struct S2<T> {}
 struct S1<T1, T2> {}
 control c0() {
   apply {
