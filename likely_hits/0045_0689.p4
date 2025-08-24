@@ -1,8 +1,6 @@
 // generated from serEnumImplCast.p4
 
 enum bit<2> foo_t { A = 0 };
-struct meta_t {
-}
 control c0() {
   action set_x(tuple<> v) {}
   table t {

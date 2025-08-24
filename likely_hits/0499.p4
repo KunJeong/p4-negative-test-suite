@@ -2,8 +2,6 @@
 
 parser P()() {
   state start {
-    if (0 == 0) {
-      return;
-    }
+    return;
   }
 }
