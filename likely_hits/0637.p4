@@ -3,9 +3,9 @@
 header H {
   bit<32> b;
 }
-control I(inout metadata_t meta)() {
+control I()() {
   apply {
     H h = { b = 1 };
-    if (h == ((H) { lazy = 1 })) h = { b = 2 };
+    if (h == (H) { lazy = 1 }) h = { b = 2 };
   }
 }
