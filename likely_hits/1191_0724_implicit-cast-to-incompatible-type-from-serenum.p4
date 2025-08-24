@@ -12,7 +12,6 @@ struct Header_t {
   hdr h;
 }
 control ingress(inout Header_t h)() {
-  action a() {}
   table t_lpm {
     key = {
       h.h.l : lpm;

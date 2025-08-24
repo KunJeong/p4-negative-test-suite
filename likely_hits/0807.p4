@@ -50,7 +50,7 @@ header tcp_t {
 }
 struct parsed_headers_t {
   eth_t mac;
-  ipv4_t[((3) + (1))] ipv4;
+  ipv4_t[3 + 1] ipv4;
   udp_t udp;
   tcp_t tcp;
 }

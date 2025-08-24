@@ -1,8 +1,6 @@
 // generated from gauntlet_hdr_int_initializer-bmv2.p4
 
 header ethernet_t {
-  bit<48> dst_addr;
-  bit<48> src_addr;
   bit<16> eth_type;
 }
 struct Headers {
