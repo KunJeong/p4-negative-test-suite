@@ -10,8 +10,6 @@ header H {
 control c(packet_out p)() {
   apply {
     p.emit(0);
-    p.emit<string>({
-        0, 1 }
-        );
+    p.emit<string>({ 0, 1 });
   }
 }

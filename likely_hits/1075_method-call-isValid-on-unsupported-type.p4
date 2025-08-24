@@ -1,7 +1,6 @@
 // generated from issue3779.p4
 
-struct h {
-}
+struct h {}
 bool f() {
-  return ((((h) ({ })).isValid()) || (((h) ({#})).isValid()));
+  return ((h) { }).isValid();
 }

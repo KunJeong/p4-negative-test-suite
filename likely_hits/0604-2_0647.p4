@@ -5,12 +5,11 @@ struct S2<T> {
   T x;
   T y;
 }
-struct S1<T1, T2> {
-  T1 x;
+struct S1<T2> {
   S2<T2> y;
 }
 control c()() {
   apply {
-    test((S1<bit<4>, int<6>>) { x = 0, y = { false, ... } });
+    test((S1<int<6>>) { y = { false, ... } });
   }
 }
