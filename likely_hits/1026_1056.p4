@@ -10,6 +10,5 @@ header H {
 control c(packet_out p)() {
   apply {
     p.emit<int>((H) { 0, 1 });
-    p.emit<H>();
   }
 }

@@ -1,7 +1,6 @@
 // generated from type-spec-nested.p4
 
-void test<T>(in T val) {
-}
+void test<T>(in T val) {}
 struct S2<T> {
   T x;
   T y;
@@ -12,10 +11,6 @@ struct S1<T1, T2> {
 }
 control c(inout bit<8> a)() {
   apply {
-    test(((S1<bit<4>, int<6>>) ({
-            x = 0, y = ((S2<bit<6>>) ({
-                  x = 0, y = 0 }
-                  )) }
-            )));
+    test((S1<bit<4>, int<6>>) { x = 0, y = (S2<bit<6>>) { x = 0, y = 0 } });
   }
 }
