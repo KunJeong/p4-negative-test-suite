@@ -7,6 +7,6 @@ header H<T> {
 control c()() {
   apply {
     match_kind s;
-    s = ((H<bit<32>>[3]) ({ { 0, 1 }, { 2, 3 }, ((H<bit<32>>) ({#})) }));
+    s = (H<bit<32>>[3]) { { 0, 1 }, { 2, 3 }, (H<bit<32>>) {#} };
   }
 }
