@@ -3,6 +3,6 @@
 header H {}
 control C()() {
   apply {
-    H h8 = (H) { b = 2, ... };
+    H h8 = (H) { b = 2 };
   }
 }

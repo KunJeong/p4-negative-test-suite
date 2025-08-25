@@ -5,6 +5,6 @@ struct S {
 }
 control C()() {
   apply {
-    S s8 = (S) { b = 2, ... };
+    S s8 = (S) { b = 2 };
   }
 }
