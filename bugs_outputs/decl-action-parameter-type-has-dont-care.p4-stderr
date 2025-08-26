@@ -1,0 +1,13 @@
+decl-action-parameter-type-has-dont-care.p4(3): [--Wwarn=unused] warning: control 'c' is unused
+control c()() {
+        ^
+decl-action-parameter-type-has-dont-care.p4(4): [--Wwarn=unused] warning: 'a1' is unused
+  action a1(inout list<_> ext) {}
+         ^^
+decl-action-parameter-type-has-dont-care.p4(4): [--Wwarn=unused] warning: 'ext' is unused
+  action a1(inout list<_> ext) {}
+                          ^^^
+decl-action-parameter-type-has-dont-care.p4(3): [--Winfo=removed] info: removing control 'c'
+control c()() {
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

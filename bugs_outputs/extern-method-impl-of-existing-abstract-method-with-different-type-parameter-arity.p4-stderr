@@ -1,0 +1,13 @@
+extern-method-impl-of-existing-abstract-method-with-different-type-parameter-arity.p4(14): [--Wwarn=parser-transition] warning: start: implicit transition to `reject'
+  state start {}
+        ^^^^^
+extern-method-impl-of-existing-abstract-method-with-different-type-parameter-arity.p4(8): [--Wwarn=unused] warning: parser 'MyParser0' is unused
+parser MyParser0() {
+       ^^^^^^^^^
+extern-method-impl-of-existing-abstract-method-with-different-type-parameter-arity.p4(9): [--Wwarn=unused] warning: 'ee' is unused
+  e() ee = {
+      ^^
+extern-method-impl-of-existing-abstract-method-with-different-type-parameter-arity.p4(8): [--Winfo=removed] info: removing parser 'MyParser0'
+parser MyParser0() {
+       ^^^^^^^^^
+[--Wwarn=missing] warning: Program does not contain a `main' module

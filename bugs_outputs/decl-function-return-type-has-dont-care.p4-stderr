@@ -1,0 +1,4 @@
+decl-function-return-type-has-dont-care.p4(4): [--Wwarn=unused] warning: 'g' is unused
+list<_> g<t>(in t b) {
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

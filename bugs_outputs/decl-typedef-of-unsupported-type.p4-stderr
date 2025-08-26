@@ -1,0 +1,4 @@
+decl-typedef-of-unsupported-type.p4(3): [--Wwarn=unused] warning: 'a1' is unused
+typedef match_kind a1;
+                   ^^
+[--Wwarn=missing] warning: Program does not contain a `main' module

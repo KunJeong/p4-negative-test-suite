@@ -1,0 +1,10 @@
+implicit-cast-to-struct-from-kvlist-expr-with-field-of-incompatible-type.p4(8): [--Wwarn=unused] warning: control 'C' is unused
+control C()() {
+        ^
+implicit-cast-to-struct-from-kvlist-expr-with-field-of-incompatible-type.p4(10): [--Wwarn=unused] warning: 'sb' is unused
+    S1 sb = {
+    ^
+implicit-cast-to-struct-from-kvlist-expr-with-field-of-incompatible-type.p4(8): [--Winfo=removed] info: removing control 'C'
+control C()() {
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

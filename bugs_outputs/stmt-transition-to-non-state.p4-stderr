@@ -1,0 +1,7 @@
+stmt-transition-to-non-state.p4(3): [--Wwarn=unused] warning: parser 'MyParser1' is unused
+parser MyParser1(in bit<6> ttt)() {
+       ^^^^^^^^^
+stmt-transition-to-non-state.p4(3): [--Winfo=removed] info: removing parser 'MyParser1'
+parser MyParser1(in bit<6> ttt)() {
+       ^^^^^^^^^
+[--Wwarn=missing] warning: Program does not contain a `main' module

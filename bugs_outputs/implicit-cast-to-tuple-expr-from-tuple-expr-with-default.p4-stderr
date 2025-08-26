@@ -1,0 +1,4 @@
+implicit-cast-to-tuple-expr-from-tuple-expr-with-default.p4(7): [--Wwarn=unused] warning: 'f' is unused
+void f(inout Headers h) {
+     ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

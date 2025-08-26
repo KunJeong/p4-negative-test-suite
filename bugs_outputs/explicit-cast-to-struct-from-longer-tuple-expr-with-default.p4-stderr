@@ -1,0 +1,10 @@
+explicit-cast-to-struct-from-longer-tuple-expr-with-default.p4(4): [--Wwarn=unused] warning: control 'C' is unused
+control C(out bit<32> x)() {
+        ^
+explicit-cast-to-struct-from-longer-tuple-expr-with-default.p4(6): [--Wwarn=unused] warning: 's6' is unused
+    S s6 = (S) { ... };
+    ^^^^^^^^^^^^^^^^^^
+explicit-cast-to-struct-from-longer-tuple-expr-with-default.p4(4): [--Winfo=removed] info: removing control 'C'
+control C(out bit<32> x)() {
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

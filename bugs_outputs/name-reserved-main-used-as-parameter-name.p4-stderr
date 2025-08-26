@@ -1,0 +1,7 @@
+name-reserved-main-used-as-parameter-name.p4(4): [--Wwarn=unused] warning: control 'c' is unused
+control c(packet_out main)() {
+        ^
+name-reserved-main-used-as-parameter-name.p4(4): [--Winfo=removed] info: removing control 'c'
+control c(packet_out main)() {
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

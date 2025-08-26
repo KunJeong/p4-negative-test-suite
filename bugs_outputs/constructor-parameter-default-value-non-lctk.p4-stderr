@@ -1,0 +1,4 @@
+constructor-parameter-default-value-non-lctk.p4(4): [--Wwarn=unused] warning: 'package P' is unused
+package P(C c = { });
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

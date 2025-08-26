@@ -1,0 +1,4 @@
+decl-typedef-of-type-with-dont-care.p4(3): [--Wwarn=unused] warning: 'i8' is unused
+typedef list<_> i8;
+                ^^
+[--Wwarn=missing] warning: Program does not contain a `main' module

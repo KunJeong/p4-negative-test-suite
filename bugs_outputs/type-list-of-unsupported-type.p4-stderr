@@ -1,0 +1,4 @@
+type-list-of-unsupported-type.p4(3): [--Wwarn=unused] warning: 't' is unused
+typedef list<void> t;
+                   ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

@@ -1,0 +1,4 @@
+method-call-isValid-with-type-arguments.p4(4): [--Wwarn=unused] warning: 'f' is unused
+bool f() {
+     ^
+[--Wwarn=missing] warning: Program does not contain a `main' module

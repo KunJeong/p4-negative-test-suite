@@ -1,0 +1,10 @@
+decl-parser-parameter-type-illformed.p4(4): [--Wwarn=parser-transition] warning: start: implicit transition to `reject'
+  state start {}
+        ^^^^^
+decl-parser-parameter-type-illformed.p4(3): [--Wwarn=unused] warning: parser 'Parser' is unused
+parser Parser(in list<_> ttt)() {
+       ^^^^^^
+decl-parser-parameter-type-illformed.p4(3): [--Winfo=removed] info: removing parser 'Parser'
+parser Parser(in list<_> ttt)() {
+       ^^^^^^
+[--Wwarn=missing] warning: Program does not contain a `main' module

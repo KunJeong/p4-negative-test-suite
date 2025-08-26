@@ -1,0 +1,13 @@
+decl-value-set-of-type-with-dont-care.p4(5): [--Wwarn=parser-transition] warning: start: implicit transition to `reject'
+  state start {}
+        ^^^^^
+decl-value-set-of-type-with-dont-care.p4(3): [--Wwarn=unused] warning: parser 'MyIP' is unused
+parser MyIP()() {
+       ^^^^
+decl-value-set-of-type-with-dont-care.p4(4): [--Wwarn=unused] warning: 'pvs' is unused
+  value_set<tuple<match_kind, _>>(4) pvs;
+                                     ^^^
+decl-value-set-of-type-with-dont-care.p4(3): [--Winfo=removed] info: removing parser 'MyIP'
+parser MyIP()() {
+       ^^^^
+[--Wwarn=missing] warning: Program does not contain a `main' module

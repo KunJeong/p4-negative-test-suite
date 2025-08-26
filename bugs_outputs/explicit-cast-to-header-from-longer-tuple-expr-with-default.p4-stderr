@@ -1,0 +1,10 @@
+explicit-cast-to-header-from-longer-tuple-expr-with-default.p4(4): [--Wwarn=unused] warning: control 'C' is unused
+control C()() {
+        ^
+explicit-cast-to-header-from-longer-tuple-expr-with-default.p4(6): [--Wwarn=unused] warning: 'h' is unused
+    H h = (H) { ... };
+    ^^^^^^^^^^^^^^^^^
+explicit-cast-to-header-from-longer-tuple-expr-with-default.p4(4): [--Winfo=removed] info: removing control 'C'
+control C()() {
+        ^
+[--Wwarn=missing] warning: Program does not contain a `main' module
