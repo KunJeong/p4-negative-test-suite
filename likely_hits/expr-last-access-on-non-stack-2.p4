@@ -5,7 +5,6 @@ struct Headers {
 }
 parser P(out Headers h)() {
   state start {
-    transition select(h.h1.last.x) {
-    }
+    transition select(h.h1.last.x) {}
   }
 }

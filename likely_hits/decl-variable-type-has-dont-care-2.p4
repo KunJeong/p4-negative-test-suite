@@ -1,8 +1,7 @@
 // generated from tuple4.p4
 
-control c(out bit<16> r)() {
+control c()() {
   apply {
     tuple<bit<32>, _> x = { 10, 12 };
-    r = x[1];
   }
 }
